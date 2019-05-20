@@ -7,9 +7,16 @@ public class Runner {
 
     private PetCtrl petCtrl;
 
+    public Runner() {
+        this.petCtrl = new PetCtrl();
+    }
+
     @Test
     public void firstTest() {
-        petCtrl = new PetCtrl();
         petCtrl.addNewPet();
+    }
+
+    @Test public void addPetPrint() {
+        petCtrl.addNewPetPrint();
     }
 }
