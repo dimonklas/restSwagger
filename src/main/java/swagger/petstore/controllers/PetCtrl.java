@@ -11,7 +11,6 @@ import static io.restassured.specification.ProxySpecification.host;
 
 public class PetCtrl {
 
-
     private RequestSpecification requestSpecification = new RequestSpecBuilder()
             .addHeader("api_key", "1qa2ws3ed4rfvcxz")
             .setBaseUri("http://petstore.swagger.io")
@@ -27,6 +26,7 @@ public class PetCtrl {
             .builder()
             .name("testMyTest")
             .build();
+
 
     public PetModel addNewPet() {
         return given()
